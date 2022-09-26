@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>import UIKit
+import Foundation
+import AppKit
+
+enum TypeOfStringEdition {
+    case numberOfLetters
+    case numberOfVowels
+    case numberOfConsonants
+    case numberOfWords
+}
+
+func editString(string: String) -&gt; (String, String, String, String) {
+    let vowels = CharacterSet(charactersIn: "aeiouy")
+    let consonants = CharacterSet.letters.subtracting(vowels)
+    var vowelCount = 0
+    var consonantCount = 0
+    var numberOfLetters = 0
+    var numberOfWords = 0
+    
+        // retirando os espaços para contar o numero de caracteres
+    string.replacingOccurrences(of: " ", with: "")
+    numberOfLetters = string.count
+    
+        // fazendo um for para passar por cada char e verificar se é vogal ou consoante
+    string.forEach { char in
+        let set = CharacterSet(charactersIn: String(char))
+        if set.isSubset(of: vowels) { 
+            vowelCount += 1 }
+        if set.isSubset(of: consonants) { 
+            consonantCount += 1 }
+    }
+    
+        // Contando o numero de palavras
+    let words =  string.split { !$0.isLetter }
+    numberOfWords = words.count
+    print("\(string) \n")
+    print("Número de vogais = \(vowelCount)")
+    print("Número de consoantes = \(consonantCount)")
+    print("Número de letras = \(numberOfLetters)") 
+    print("Número de palavras = \(numberOfWords)\n\n")
+        
+    return ("Número de vogais = \(vowelCount)", "Número de consoantes = \(consonantCount)", "Número de letras = \(numberOfLetters)", "Número de palavras = \(numberOfWords)")
+}
+
+var saveCorinthiansString = "Salve o Corinthians!"
+var testString = "Frase de teste no método"
+editString(string: saveCorinthiansString)
+editString(string: testString)
+editString(string: "Teste")
+
+
+</string>
+			<key>ModifiedRange</key>
+			<string>{1, 1699}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{1, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
