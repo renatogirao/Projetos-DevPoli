@@ -18,7 +18,7 @@ enum TypeOfStringEdition {
 }
 
 func editString(string: String) -&gt; (String, String, String, String) {
-    let vowels = CharacterSet(charactersIn: "aeiouy")
+    let vowels = CharacterSet(charactersIn: "aeiouAEIOU")
     let consonants = CharacterSet.letters.subtracting(vowels)
     var vowelCount = 0
     var consonantCount = 0
@@ -55,11 +55,12 @@ var testString = "Frase de teste no método"
 editString(string: saveCorinthiansString)
 editString(string: testString)
 editString(string: "Teste")
-
+var test2String = "Quem nasceu para ser Yuri Alberto nunca vai ser Fabuloso"
+editString(string: test2String)
 
 </string>
 			<key>ModifiedRange</key>
-			<string>{1, 1699}</string>
+			<string>{1, 1811}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
