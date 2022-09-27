@@ -26,8 +26,8 @@ func editString(string: String) -&gt; (String, String, String, String) {
     var numberOfWords = 0
     
         // retirando os espaços para contar o numero de caracteres
-    string.replacingOccurrences(of: " ", with: "")
-    numberOfLetters = string.count
+    var editedString = string.replacingOccurrences(of: " ", with: "")
+    numberOfLetters = editedString.count
     
         // fazendo um for para passar por cada char e verificar se é vogal ou consoante
     string.forEach { char in
@@ -60,7 +60,7 @@ editString(string: test2String)
 
 </string>
 			<key>ModifiedRange</key>
-			<string>{1, 1811}</string>
+			<string>{1, 1836}</string>
 			<key>OriginalContent</key>
 			<string></string>
 			<key>OriginalRange</key>
