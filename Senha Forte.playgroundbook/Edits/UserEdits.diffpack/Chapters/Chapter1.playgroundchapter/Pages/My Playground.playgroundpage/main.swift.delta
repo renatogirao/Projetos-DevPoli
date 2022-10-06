@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Diff</key>
+	<array>
+		<dict>
+			<key>ModifiedContent</key>
+			<string></string>
+			<key>ModifiedRange</key>
+			<string>{690, 0}</string>
+			<key>OriginalContent</key>
+			<string>ased() &amp;&amp; password.numberOfUpperc</string>
+			<key>OriginalRange</key>
+			<string>{690, 33}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string></string>
+			<key>ModifiedRange</key>
+			<string>{694, 0}</string>
+			<key>OriginalContent</key>
+			<string>Letter</string>
+			<key>OriginalRange</key>
+			<string>{727, 6}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string></string>
+			<key>ModifiedRange</key>
+			<string>{696, 0}</string>
+			<key>OriginalContent</key>
+			<string> == 1</string>
+			<key>OriginalRange</key>
+			<string>{735, 5}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>        } else if !password.checkAnyNumberInString() {
+                print("\(password): Precisa ter ao menos um número\n")
+</string>
+			<key>ModifiedRange</key>
+			<string>{772, 126}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{816, 0}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>checkPasswordComplexity(password: "SEnhCorreTa")
+checkPasswordComplexity(password: "smletramaiuscu")
+checkPasswordComplexity(password: "SMLETRAMINUSCU")
+checkPasswordComplexity(password: "Semnumero")
+checkPasswordComplexity(password: "nComecCMaiusc4")
+checkPasswordComplexity(password: "Cmc4r@cter")
+checkPasswordComplexity(password: "M1ni")
+checkPasswordComplexity(password: "Maximod3c4ract3res")
+checkPasswordComplexity(password: "SEnh4Corr3")
+</string>
+			<key>ModifiedRange</key>
+			<string>{1204, 446}</string>
+			<key>OriginalContent</key>
+			<string>checkPasswordComplexity(password: "SEnhACorreTa")
+</string>
+			<key>OriginalRange</key>
+			<string>{1122, 50}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>                    self.capitalizingFirstLetter()
+                    if self.prefix(1).uppercased() == self.prefix(1) {
+</string>
+			<key>ModifiedRange</key>
+			<string>{3655, 122}</string>
+			<key>OriginalContent</key>
+			<string>                    if self == self.capitalized {
+</string>
+			<key>OriginalRange</key>
+			<string>{3177, 50}</string>
+		</dict>
+		<dict>
+			<key>ModifiedContent</key>
+			<string>    func capitalizingFirstLetter() -&gt; String {
+        return prefix(1).uppercased() + self.lowercased().dropFirst()
+    }
+    
+    mutating func capitalizeFirstLetter() {
+        self = self.capitalizingFirstLetter()
+    }
+</string>
+			<key>ModifiedRange</key>
+			<string>{4831, 224}</string>
+			<key>OriginalContent</key>
+			<string></string>
+			<key>OriginalRange</key>
+			<string>{4281, 0}</string>
+		</dict>
+	</array>
+	<key>File</key>
+	<string>Chapters/Chapter1.playgroundchapter/Pages/My Playground.playgroundpage/main.swift</string>
+</dict>
+</plist>
